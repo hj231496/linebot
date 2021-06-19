@@ -11,7 +11,7 @@ Line Bot機器人串接與測試
 """
 #載入LineBot所需要的套件
 from flask import Flask, request, abort
-
+import re
 from linebot import (
     LineBotApi, WebhookHandler
 )
@@ -19,7 +19,7 @@ from linebot.exceptions import (
     InvalidSignatureError
 )
 from linebot.models import *
-
+import time
 app = Flask(__name__)
 
 # 必須放上自己的Channel Access Token
@@ -28,7 +28,10 @@ line_bot_api = LineBotApi('1vmKFYz8QQclbvt3pdKXcjU40jdw21gmARxiLP0N6bB0dbM47tbAr
 handler = WebhookHandler('e2c72584113eafe24c4da5eadaa195d6')
 
 line_bot_api.push_message('U2d6e82f55b58b4877296ca5bcdb33856', TextSendMessage(text='你可以開始了'))
-
+for i in [1,2,3,4,5]:
+    line_bot_api.push_message('U2d6e82f55b58b4877296ca5bcdb33856', 
+                              TextSendMessage(text='我們來倒數：'+str(i)))
+    time.sleep(1)
 # 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
 def callback():
@@ -52,7 +55,12 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     message = TextSendMessage(text=event.message.text)
-    line_bot_api.reply_message(event.reply_token,message)
+    if re.match('你會做什麼',message):
+        line_bot_api.reply_message(event.reply,TextSendMessage('關你屁事'))
+    else:
+        line_bot_api.reply_message(event.reply_token,message)
+
+    
 
 #主程式
 import os
