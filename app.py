@@ -56,9 +56,9 @@ def callback():
 def handle_message(event):
     message = text=event.message.text
     if re.match('你會做什麼',message):
-        line_bot_api.reply_message(event.reply,TextSendMessage('關你屁事'))
+        line_bot_api.reply_message(event.reply_token,TextSendMessage('關你屁事'))
     else:
-        line_bot_api.reply_message(event.reply_token,message)
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(message))
 
     
 
