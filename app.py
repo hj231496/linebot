@@ -58,7 +58,7 @@ def handle_message(event):
     if re.match('你會做什麼',message):
         line_bot_api.reply_message(event.reply,TextSendMessage('關你屁事'))
     else:
-        line_bot_api.reply_message(event.reply_token,message)
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(message))
 
     if re.match('告訴我秘密',message):
         # 貼圖查詢：https://developers.line.biz/en/docs/messaging-api/sticker-list/#specify-sticker-in-message-object
