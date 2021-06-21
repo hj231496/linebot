@@ -56,11 +56,19 @@ def callback():
 def handle_message(event):
     message = text=event.message.text
     if re.match('你會做什麼',message):
-        line_bot_api.reply_message(event.reply_token,TextSendMessage('關你屁事'))
+        line_bot_api.reply_message(event.reply,TextSendMessage('關你屁事'))
     else:
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(message))
+        line_bot_api.reply_message(event.reply_token,message)
 
-    
+    if re.match('告訴我秘密',message):
+        # 貼圖查詢：https://developers.line.biz/en/docs/messaging-api/sticker-list/#specify-sticker-in-message-object
+        sticker_message = StickerSendMessage(
+            package_id='1',
+            sticker_id='1'
+        )
+        line_bot_api.reply_message(event.reply_token, sticker_message)
+    else:
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(message))
 
 #主程式
 import os
