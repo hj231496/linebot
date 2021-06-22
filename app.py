@@ -39,7 +39,6 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
      message =event.message.text
-     line_bot_api.reply_message(event.reply_token, TextSendMessage(message.text))
      if re.match('天氣',message):
          buttons_template_message = TemplateSendMessage(
          alt_text='天氣選單', #按鈕樣板內部註解
