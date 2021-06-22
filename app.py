@@ -51,8 +51,8 @@ def handle_message(event):
      )
          line_bot_api.reply_message(event.reply_token, buttons_template_message)
      if re.match('北部',message):
-         w.catch(message.text)
-         line_bot_api.reply_message(event.reply_token, TextSendMessage(weather(message.text)))
+         
+         line_bot_api.reply_message(event.reply_token, TextSendMessage(w.catch(message.text)))
 
          
 #主程式
