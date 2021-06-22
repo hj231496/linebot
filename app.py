@@ -41,33 +41,20 @@ def callback():
 ##### 基本上程式編輯都在這個function #####
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-     message = event.message.text
+     message =event.message.text
      if re.match('天氣',message):
          buttons_template_message = TemplateSendMessage(
-         alt_text='天氣選單', #按鈕樣板介紹
+         alt_text='天氣選單', #按鈕樣板內部註解
          template=ButtonsTemplate(
              thumbnail_image_url='https://i.imgur.com/GGV9AQv.jpeg',
-             title='你住在哪裡',
-             text='你他媽說喔',
-             actions=[
-                 MessageAction(
-                     label='北部',
-                     text='北部'
-                 ),
-                 MessageAction(
-                     label='中部',
-                     text='中部'
-                 ),
-                 MessageAction(
-                     label='南部',
-                     text='南部'
-                 )
-             ]
+             title='你住在哪裡',#樣板標題 
+             text='你他媽說喔',#樣板介紹
+             actions=[MessageAction(label='北部',text='北部'),MessageAction(label='中部',text='中部'),MessageAction(label='南部',text='南部')]
          )
      )
          line_bot_api.reply_message(event.reply_token, buttons_template_message)
-    
 
+         
 #主程式
 import os
 if __name__ == "__main__":
