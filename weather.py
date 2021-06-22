@@ -4,7 +4,7 @@ option.add_argument("headless")
 driver = webdriver.Chrome(chrome_options=option)
 
 
-def weather(contury):
+def catch(contury):
     if contury=='北部':
         driver.get('https://www.cwb.gov.tw/V8/C/W/County/County.html?CID=63')
     if contury=='中部':
