@@ -7,10 +7,7 @@ from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 import time
-from selenium import webdriver
-option = webdriver.ChromeOptions()
-option.add_argument("headless")
-driver = webdriver.Chrome(chrome_options=option)
+
 app = Flask(__name__)
 
 # 必須放上自己的Channel Access Token
@@ -54,9 +51,7 @@ def handle_message(event):
      )
          line_bot_api.reply_message(event.reply_token, buttons_template_message)
      if re.match('北部',message):
-         driver.get('https://www.cwb.gov.tw/V8/C/W/County/County.html?CID=63')
-         temp=driver.find_element_by_xpath('/html/body/div[2]/main/div/div[1]/div[3]/div[2]/ul').text
-         line_bot_api.reply_message(event.reply_token, TextSendMessage(temp))
+         line_bot_api.reply_message(event.reply_token, TextSendMessage('幹你娘'))
 
          
 #主程式
