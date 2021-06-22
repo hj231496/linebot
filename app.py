@@ -50,6 +50,7 @@ def handle_message(event):
          )
      )
          line_bot_api.reply_message(event.reply_token, buttons_template_message)
+     line_bot_api.reply_message(event.reply_token, TextSendMessage(message.text))
      if re.match('北部',message):
          
          line_bot_api.reply_message(event.reply_token, TextSendMessage(w.catch(message.text)))
