@@ -7,7 +7,7 @@ from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 import time
-from service.weather import catch
+#from service.weather import catch
 app = Flask(__name__)
 
 # 必須放上自己的Channel Access Token
