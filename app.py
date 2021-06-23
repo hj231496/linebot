@@ -8,6 +8,7 @@ from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 import time
 import selenium
+from weather import catch
 app = Flask(__name__)
 
 # 必須放上自己的Channel Access Token
