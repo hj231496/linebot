@@ -7,7 +7,7 @@ from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 import time
-#from service.weather import catch
+from .weather import catch
 app = Flask(__name__)
 
 # 必須放上自己的Channel Access Token
@@ -44,7 +44,7 @@ def handle_message(event):
          alt_text='天氣選單', #按鈕樣板內部註解
          template=ButtonsTemplate(
              thumbnail_image_url='https://i.imgur.com/GGV9AQv.jpeg',
-             title='你住在哪裡',#樣板標題 
+             title='你住  在哪裡',#樣板標題 
              text='你他媽說喔',#樣板介紹
              actions=[MessageAction(label='北部',text='北部'),MessageAction(label='中部',text='中部'),MessageAction(label='南部',text='南部')]
          )
