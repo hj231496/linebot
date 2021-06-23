@@ -7,7 +7,6 @@ from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 import time
-import selenium
 from weather import catch
 app = Flask(__name__)
 
