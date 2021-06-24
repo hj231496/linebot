@@ -1,5 +1,4 @@
 from selenium import webdriver
-from urllib.parse import urlparse
 option = webdriver.ChromeOptions()
 option.add_argument("--headless")
 option.add_argument('--disable-gpu')
