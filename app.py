@@ -27,7 +27,7 @@ def callback():
     # get request body as text
     body = request.get_data(as_text=True)
     app.logger.info("Request body: " + body)
-
+    print(body)
     # handle webhook body
     try:
         handler.handle(body, signature)
@@ -87,8 +87,6 @@ def handle_message(event):
          line_bot_api.reply_message(event.reply_token, buttons_template_message)#樣板建置完成後發送
      elif re.match('北部',message) or re.match('中部',message) or re.match('南部',message):
          line_bot_api.reply_message(event.reply_token, TextSendMessage(catch_weather(message)))
-     else:
-         line_bot_api.reply_message(event.reply_token, TextSendMessage('你媽逼的'+message))
     
 
 
@@ -96,5 +94,5 @@ def handle_message(event):
 #主程式
 import os
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 5000))
+    port = int(os.environ.get('PORT', 8080))
     app.run(host='0.0.0.0', port=port)
