@@ -6,7 +6,6 @@ import re
 from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
-import time
 from weather import catch_weather
 from news import catch_news_graphic, catch_news_text,catch_news_time, catch_news_url,detail
 
@@ -27,7 +26,7 @@ def callback():
     # get request body as text
     body = request.get_data(as_text=True)
     app.logger.info("Request body: " + body)
-    print(body)
+    #print(body)
     # handle webhook body
     try:
         handler.handle(body, signature)
@@ -43,7 +42,7 @@ def handle_message(event):
      message =event.message.text
      if re.match('你會做什麼',message):
          line_bot_api.reply_message(event.reply_token, TextSendMessage('我現在只會找天氣，請輸入天氣'))
-     if re.match('新聞',message):
+     elif re.match('新聞',message):
         carousel_template_message = TemplateSendMessage(
              alt_text='新聞樣板',
              template=CarouselTemplate(
@@ -74,7 +73,7 @@ def handle_message(event):
          line_bot_api.reply_message(event.reply_token, TextSendMessage(detail(message)))
     
 
-     if re.match('天氣',message):#天氣模板
+     elif re.match('天氣',message):#天氣模板
          buttons_template_message = TemplateSendMessage(
          alt_text='天氣選單', #按鈕樣板內部註解
          template=ButtonsTemplate(
@@ -87,12 +86,14 @@ def handle_message(event):
          line_bot_api.reply_message(event.reply_token, buttons_template_message)#樣板建置完成後發送
      elif re.match('北部',message) or re.match('中部',message) or re.match('南部',message):
          line_bot_api.reply_message(event.reply_token, TextSendMessage(catch_weather(message)))
-    
+     else:
+         line_bot_api.reply_message(event.reply_token, TextSendMessage('你媽的逼'+message))
+
 
 
          
 #主程式
 import os
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 5000))
+    port = int(os.environ.get('PORT', 8070))
     app.run(host='0.0.0.0', port=port)
