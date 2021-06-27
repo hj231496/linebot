@@ -8,7 +8,8 @@ from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 from weather import catch_weather
 from news import catch_news_graphic, catch_news_text,catch_news_time, catch_news_url,detail
-
+from foodpanda import Nearest_restaurant
+import json
 app = Flask(__name__)
 
 # 必須放上自己的Channel Access Token
@@ -71,8 +72,6 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, carousel_template_message)
      elif re.match('第1則新聞',message) or re.match('第2則新聞',message) or re.match('第3則新聞',message):
          line_bot_api.reply_message(event.reply_token, TextSendMessage(detail(message)))
-    
-
      elif re.match('天氣',message):#天氣模板
          buttons_template_message = TemplateSendMessage(
          alt_text='天氣選單', #按鈕樣板內部註解
@@ -86,14 +85,23 @@ def handle_message(event):
          line_bot_api.reply_message(event.reply_token, buttons_template_message)#樣板建置完成後發送
      elif re.match('北部',message) or re.match('中部',message) or re.match('南部',message):
          line_bot_api.reply_message(event.reply_token, TextSendMessage(catch_weather(message)))
-     else:
-         line_bot_api.reply_message(event.reply_token, TextSendMessage('你媽的逼'+message))
+     elif re.match('foodpanda',message) or re.match('Foodpanda',message) or re.match('FoodPanda',message):
+         line_bot_api.reply_message(event.reply_token,TextSendMessage('請回傳位置訊息給我'))
+@handler.add(MessageEvent, message=LocationMessage)
+def handle_location_message(event):
+    lat = str(event.message.latitude)  #緯度
+    lon = str(event.message.longitude) #緯度
+    Nearest_restaurant(lat,lon)
+    FlexMessage = json.load(open('foodpanda.json','r',encoding='utf-8'))
+    line_bot_api.reply_message(event.reply_token, FlexSendMessage('foodpanda',FlexMessage))
 
+
+     
 
 
          
-#主程式
+
 import os
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 5000))
+    port = int(os.environ.get('PORT', 8070))
     app.run(host='0.0.0.0', port=port)
