@@ -17,7 +17,7 @@
                 "contents": [
                     {
                         "type": "text",
-                        "text": "hi",
+                        "text": "\u7368\u9818\u760b\u71d2",
                         "weight": "bold",
                         "size": "sm",
                         "wrap": true
@@ -33,14 +33,13 @@
                             },
                             {
                                 "type": "text",
-                                "text": "4.0",
+                                "text": "4.7",
                                 "size": "xs",
                                 "color": "#8c8c8c",
                                 "margin": "md",
                                 "flex": 0
                             }
-                        ],
-                        "text": "hi"
+                        ]
                     },
                     {
                         "type": "box",
@@ -53,7 +52,7 @@
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "\u4e2d\u6e2f,\u9eb5\u98df\u6599\u7406,\u5e97\u5167\u50f9",
+                                        "text": "\u4e2d\u6e2f\u9eb5\u98df\u6599\u7406<\u5e97\u5167\u50f9>",
                                         "wrap": true,
                                         "color": "#8c8c8c",
                                         "size": "xs",
@@ -61,12 +60,584 @@
                                     }
                                 ]
                             }
-                        ],
-                        "text": "hi"
+                        ]
                     }
                 ],
                 "spacing": "sm",
                 "paddingAll": "13px"
+            },
+            "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.foodpanda.com.tw/restaurant/z9hd/du-ling-feng-shao"
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "micro",
+            "hero": {
+                "type": "image",
+                "url": "https://images.deliveryhero.io/image/fd-tw/LH/z1sl-listing.jpg",
+                "size": "full",
+                "aspectMode": "cover",
+                "aspectRatio": "320:213"
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "\u8ce3\u7530\u6e6f-\u4e2d\u5f0f\u751c\u6e6f\u5c08\u8ce3",
+                        "weight": "bold",
+                        "size": "sm",
+                        "wrap": true
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "contents": [
+                            {
+                                "type": "icon",
+                                "size": "xs",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                            },
+                            {
+                                "type": "text",
+                                "text": "4.8",
+                                "size": "xs",
+                                "color": "#8c8c8c",
+                                "margin": "md",
+                                "flex": 0
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "spacing": "sm",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "\u751c\u9ede",
+                                        "wrap": true,
+                                        "color": "#8c8c8c",
+                                        "size": "xs",
+                                        "flex": 5
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "spacing": "sm",
+                "paddingAll": "13px"
+            },
+            "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.foodpanda.com.tw/restaurant/z1sl/mai-tian-tang-zhong-shi-tian-tang-zhuan-mai"
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "micro",
+            "hero": {
+                "type": "image",
+                "url": "https://images.deliveryhero.io/image/fd-tw/LH/i2zb-listing.jpg",
+                "size": "full",
+                "aspectMode": "cover",
+                "aspectRatio": "320:213"
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "\u53e4\u57ce\u8c46\u82b1\u5e84 (\u4e2d\u83ef\u8def\u8001\u5e97)",
+                        "weight": "bold",
+                        "size": "sm",
+                        "wrap": true
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "contents": [
+                            {
+                                "type": "icon",
+                                "size": "xs",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                            },
+                            {
+                                "type": "text",
+                                "text": "4.6",
+                                "size": "xs",
+                                "color": "#8c8c8c",
+                                "margin": "md",
+                                "flex": 0
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "spacing": "sm",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "\u4e2d\u6e2f<\u5e97\u5167\u50f9>",
+                                        "wrap": true,
+                                        "color": "#8c8c8c",
+                                        "size": "xs",
+                                        "flex": 5
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "spacing": "sm",
+                "paddingAll": "13px"
+            },
+            "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.foodpanda.com.tw/restaurant/i2zb/gu-cheng-dou-hua-zhuang-zhong-hua-lu-lao-dian"
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "micro",
+            "hero": {
+                "type": "image",
+                "url": "https://images.deliveryhero.io/image/fd-tw/LH/cpcr-listing.jpg",
+                "size": "full",
+                "aspectMode": "cover",
+                "aspectRatio": "320:213"
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "\u4eac\u5ddd\u934b\u7269",
+                        "weight": "bold",
+                        "size": "sm",
+                        "wrap": true
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "contents": [
+                            {
+                                "type": "icon",
+                                "size": "xs",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                            },
+                            {
+                                "type": "text",
+                                "text": "4.6",
+                                "size": "xs",
+                                "color": "#8c8c8c",
+                                "margin": "md",
+                                "flex": 0
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "spacing": "sm",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "\u4e2d\u6e2f<\u5e97\u5167\u50f9>\u706b\u934b",
+                                        "wrap": true,
+                                        "color": "#8c8c8c",
+                                        "size": "xs",
+                                        "flex": 5
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "spacing": "sm",
+                "paddingAll": "13px"
+            },
+            "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.foodpanda.com.tw/restaurant/cpcr/jing-chuan-guo-wu"
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "micro",
+            "hero": {
+                "type": "image",
+                "url": "https://images.deliveryhero.io/image/fd-tw/LH/f2dh-listing.jpg",
+                "size": "full",
+                "aspectMode": "cover",
+                "aspectRatio": "320:213"
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "\u8336\u805a (\u6c38\u5eb7\u4e2d\u83ef\u5e97)",
+                        "weight": "bold",
+                        "size": "sm",
+                        "wrap": true
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "contents": [
+                            {
+                                "type": "icon",
+                                "size": "xs",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                            },
+                            {
+                                "type": "text",
+                                "text": "4.8",
+                                "size": "xs",
+                                "color": "#8c8c8c",
+                                "margin": "md",
+                                "flex": 0
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "spacing": "sm",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "\u98f2\u6599<\u5e97\u5167\u50f9>",
+                                        "wrap": true,
+                                        "color": "#8c8c8c",
+                                        "size": "xs",
+                                        "flex": 5
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "spacing": "sm",
+                "paddingAll": "13px"
+            },
+            "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.foodpanda.com.tw/restaurant/f2dh/cha-ju-yong-kang-zhong-hua-dian"
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "micro",
+            "hero": {
+                "type": "image",
+                "url": "https://images.deliveryhero.io/image/fd-tw/LH/nm5i-listing.jpg",
+                "size": "full",
+                "aspectMode": "cover",
+                "aspectRatio": "320:213"
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "\u5ee3\u6771\u6c99\u8336\u7210 (\u6c38\u5eb7\u4e2d\u83ef\u5e97)",
+                        "weight": "bold",
+                        "size": "sm",
+                        "wrap": true
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "contents": [
+                            {
+                                "type": "icon",
+                                "size": "xs",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                            },
+                            {
+                                "type": "text",
+                                "text": "4.8",
+                                "size": "xs",
+                                "color": "#8c8c8c",
+                                "margin": "md",
+                                "flex": 0
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "spacing": "sm",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "\u4e2d\u6e2f<\u5e97\u5167\u50f9>",
+                                        "wrap": true,
+                                        "color": "#8c8c8c",
+                                        "size": "xs",
+                                        "flex": 5
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "spacing": "sm",
+                "paddingAll": "13px"
+            },
+            "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.foodpanda.com.tw/restaurant/nm5i/guang-dong-sha-cha-lu-yong-kang-zhong-hua-dian"
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "micro",
+            "hero": {
+                "type": "image",
+                "url": "https://images.deliveryhero.io/image/fd-tw/LH/hrs7-listing.jpg",
+                "size": "full",
+                "aspectMode": "cover",
+                "aspectRatio": "320:213"
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "\u5929\u5e9c\u9ebb\u8fa3\u4e7e\u934b",
+                        "weight": "bold",
+                        "size": "sm",
+                        "wrap": true
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "contents": [
+                            {
+                                "type": "icon",
+                                "size": "xs",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                            },
+                            {
+                                "type": "text",
+                                "text": "4.5",
+                                "size": "xs",
+                                "color": "#8c8c8c",
+                                "margin": "md",
+                                "flex": 0
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "spacing": "sm",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "\u4e2d\u6e2f<\u5e97\u5167\u50f9>\u706b\u934b",
+                                        "wrap": true,
+                                        "color": "#8c8c8c",
+                                        "size": "xs",
+                                        "flex": 5
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "spacing": "sm",
+                "paddingAll": "13px"
+            },
+            "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.foodpanda.com.tw/restaurant/hrs7/tian-fu-ma-la-gan-guo"
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "micro",
+            "hero": {
+                "type": "image",
+                "url": "https://images.deliveryhero.io/image/fd-tw/LH/z9ax-listing.jpg",
+                "size": "full",
+                "aspectMode": "cover",
+                "aspectRatio": "320:213"
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "\u91d1\u54ad\u7530\u5c0f\u706b\u934b (\u53f0\u5357\u4e2d\u83ef\u5e97)",
+                        "weight": "bold",
+                        "size": "sm",
+                        "wrap": true
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "contents": [
+                            {
+                                "type": "icon",
+                                "size": "xs",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                            },
+                            {
+                                "type": "text",
+                                "text": "4.6",
+                                "size": "xs",
+                                "color": "#8c8c8c",
+                                "margin": "md",
+                                "flex": 0
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "spacing": "sm",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "\u4e2d\u6e2f<\u5e97\u5167\u50f9>\u706b\u934b",
+                                        "wrap": true,
+                                        "color": "#8c8c8c",
+                                        "size": "xs",
+                                        "flex": 5
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "spacing": "sm",
+                "paddingAll": "13px"
+            },
+            "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.foodpanda.com.tw/restaurant/z9ax/jin-ji-tian-xiao-huo-guo-tai-nan-zhong-hua-dian"
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "micro",
+            "hero": {
+                "type": "image",
+                "url": "https://images.deliveryhero.io/image/fd-tw/LH/aled-listing.jpg",
+                "size": "full",
+                "aspectMode": "cover",
+                "aspectRatio": "320:213"
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "\u73cd\u716e\u4e39 (\u6c38\u5eb7\u4e2d\u83ef\u5e97)",
+                        "weight": "bold",
+                        "size": "sm",
+                        "wrap": true
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "contents": [
+                            {
+                                "type": "icon",
+                                "size": "xs",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                            },
+                            {
+                                "type": "text",
+                                "text": "4.8",
+                                "size": "xs",
+                                "color": "#8c8c8c",
+                                "margin": "md",
+                                "flex": 0
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "spacing": "sm",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "\u98f2\u6599",
+                                        "wrap": true,
+                                        "color": "#8c8c8c",
+                                        "size": "xs",
+                                        "flex": 5
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "spacing": "sm",
+                "paddingAll": "13px"
+            },
+            "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.foodpanda.com.tw/restaurant/aled/zhen-zhu-dan-yong-kang-zhong-hua-dian"
             }
         },
         {
@@ -85,7 +656,78 @@
                 "contents": [
                     {
                         "type": "text",
-                        "text": "hi",
+                        "text": "\u6f6e\u9ebb\u5409 (\u6c38\u5eb7\u4e2d\u83ef\u5e97)",
+                        "weight": "bold",
+                        "size": "sm",
+                        "wrap": true
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "contents": [
+                            {
+                                "type": "icon",
+                                "size": "xs",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                            },
+                            {
+                                "type": "text",
+                                "text": "4.7",
+                                "size": "xs",
+                                "color": "#8c8c8c",
+                                "margin": "md",
+                                "flex": 0
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "baseline",
+                                "spacing": "sm",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "\u5c0f\u5403<\u5e97\u5167\u50f9>\u70b8\u96de",
+                                        "wrap": true,
+                                        "color": "#8c8c8c",
+                                        "size": "xs",
+                                        "flex": 5
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "spacing": "sm",
+                "paddingAll": "13px"
+            },
+            "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.foodpanda.com.tw/restaurant/gsj4/chao-ma-ji-yong-kang-zhong-hua-dian"
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "micro",
+            "hero": {
+                "type": "image",
+                "url": "https://media.cakeresume.com/image/upload/s--hY9y5OQJ--/c_pad,fl_png8,h_400,w_400/v1571369066/au7vxybehtibmj1uedt2.png",
+                "size": "full",
+                "aspectMode": "cover",
+                "aspectRatio": "320:213"
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "\u66f4\u591a\u9910\u5ef3",
                         "weight": "bold",
                         "size": "sm",
                         "wrap": true
@@ -107,8 +749,7 @@
                                 "margin": "md",
                                 "flex": 0
                             }
-                        ],
-                        "text": "hi"
+                        ]
                     },
                     {
                         "type": "box",
@@ -121,7 +762,7 @@
                                 "contents": [
                                     {
                                         "type": "text",
-                                        "text": "\u6771\u4eac\u65c5\u884c",
+                                        "text": "\u60f3\u627e\u66f4\u591a\u9644\u8fd1\u9910\u5ef3\u55ce",
                                         "wrap": true,
                                         "color": "#8c8c8c",
                                         "size": "xs",
@@ -129,51 +770,16 @@
                                     }
                                 ]
                             }
-                        ],
-                        "text": "hi"
+                        ]
                     }
                 ],
                 "spacing": "sm",
                 "paddingAll": "13px"
-            }
-        },
-        {
-            "type": "bubble",
-            "size": "micro",
-            "hero": {
-                "type": "image",
-                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip10.jpg",
-                "size": "full",
-                "aspectMode": "cover",
-                "aspectRatio": "320:213"
             },
-            "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                    {
-                        "type": "text",
-                        "text": "Brown Cafe",
-                        "weight": "bold",
-                        "size": "sm",
-                        "wrap": true
-                    },
-                    {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": []
-                    },
-                    {
-                        "type": "button",
-                        "action": {
-                            "type": "uri",
-                            "label": "\u67e5\u770b\u66f4\u591a\u9910\u5ef3",
-                            "uri": "http://linecorp.com/"
-                        }
-                    }
-                ],
-                "spacing": "sm",
-                "paddingAll": "13px"
+            "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "https://www.foodpanda.com.tw/restaurants/new?lat=23.012410951478753&lng=120.2324759420391&vertical=restaurants&sort=distance_asc"
             }
         }
     ]
