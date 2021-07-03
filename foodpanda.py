@@ -15,7 +15,7 @@ def Nearest_restaurant(lat,lng):
    option.add_argument('--ignore-certificate-errors')
    option.add_argument('--allow-running-insecure-content')
    option.add_experimental_option('excludeSwitches', ['enable-automation']) 
-   user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+   user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.50 Safari/537.36'
    option.add_argument(f'user-agent={user_agent}')
    driver = webdriver.Chrome(chrome_options=option)
 
